@@ -6,6 +6,7 @@
 }
 body {
   background: url("./Captura.png");
+  background: skyblue;
 }
 .alto{
   width: 100%;
@@ -15,10 +16,15 @@ body {
   width: 640px;
   height: 450px;
   margin-top: 400px;
-  margin-left: 30px;
+  margin-left: 25%;
   -webkit-perspective: 1200px;
   perspective: 1200px;
   transition: 1s;
+}
+@media (min-width: 768px) {
+  .card{
+    margin-left: 25%;
+  }
 }
 .card:hover {
   transform: rotate(-5deg);
@@ -31,6 +37,7 @@ body {
   height: 100%;
   width: 50%;
   position: absolute;
+
 }
 .inside {
   background: linear-gradient(to right, #e7e7e7, #ffffff 30%);
@@ -41,6 +48,7 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+
 
 }
 .outside {
@@ -82,4 +90,8 @@ body {
 .inside h1 {
   font-size: 120px;
   line-height: 120px;
+}
+.inside p{
+  color: skyblue;
+  font-family: cursive;
 }
